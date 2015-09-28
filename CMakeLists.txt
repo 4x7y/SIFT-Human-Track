@@ -4,14 +4,11 @@ cmake_minimum_required ( VERSION 2.8 )
 # 工程名称
 project( SIFT-Human-Track )
 
-
 find_package( OpenCV REQUIRED )
 include_directories( ${root_SOURCE_DIR}/include )
 
 
-aux_source_directory( ${root_SOURCE_DIR}/src DIR_SRCS )
 
+add_subdirectory( src bin )
 
-add_executable( SIFT-Human-Track ${DIR_SRCS} )
-target_link_libraries( SIFT-Human-Track ${OpenCV_LIBS} )
-
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)

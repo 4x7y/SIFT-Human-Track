@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.2.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.2.3/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "src/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -44,9 +45,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "bin/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/SIFT-Human-Track.dir/DependInfo.cmake"
+  "bin/CMakeFiles/SIFT-Human-Track.dir/DependInfo.cmake"
   )

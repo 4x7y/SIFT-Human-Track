@@ -49,12 +49,37 @@ include CMakeFiles/SIFT-Human-Track.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SIFT-Human-Track.dir/flags.make
 
+CMakeFiles/SIFT-Human-Track.dir/main.cpp.o: CMakeFiles/SIFT-Human-Track.dir/flags.make
+CMakeFiles/SIFT-Human-Track.dir/main.cpp.o: main.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/SIFT-Human-Track.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SIFT-Human-Track.dir/main.cpp.o -c /Users/yuechuan/Develop/SIFT-Human-Track/main.cpp
+
+CMakeFiles/SIFT-Human-Track.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SIFT-Human-Track.dir/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/yuechuan/Develop/SIFT-Human-Track/main.cpp > CMakeFiles/SIFT-Human-Track.dir/main.cpp.i
+
+CMakeFiles/SIFT-Human-Track.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SIFT-Human-Track.dir/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/yuechuan/Develop/SIFT-Human-Track/main.cpp -o CMakeFiles/SIFT-Human-Track.dir/main.cpp.s
+
+CMakeFiles/SIFT-Human-Track.dir/main.cpp.o.requires:
+.PHONY : CMakeFiles/SIFT-Human-Track.dir/main.cpp.o.requires
+
+CMakeFiles/SIFT-Human-Track.dir/main.cpp.o.provides: CMakeFiles/SIFT-Human-Track.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/SIFT-Human-Track.dir/build.make CMakeFiles/SIFT-Human-Track.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/SIFT-Human-Track.dir/main.cpp.o.provides
+
+CMakeFiles/SIFT-Human-Track.dir/main.cpp.o.provides.build: CMakeFiles/SIFT-Human-Track.dir/main.cpp.o
+
 # Object files for target SIFT-Human-Track
-SIFT__Human__Track_OBJECTS =
+SIFT__Human__Track_OBJECTS = \
+"CMakeFiles/SIFT-Human-Track.dir/main.cpp.o"
 
 # External object files for target SIFT-Human-Track
 SIFT__Human__Track_EXTERNAL_OBJECTS =
 
+SIFT-Human-Track: CMakeFiles/SIFT-Human-Track.dir/main.cpp.o
 SIFT-Human-Track: CMakeFiles/SIFT-Human-Track.dir/build.make
 SIFT-Human-Track: /usr/local/lib/libopencv_videostab.2.4.11.dylib
 SIFT-Human-Track: /usr/local/lib/libopencv_ts.a
@@ -83,7 +108,7 @@ SIFT-Human-Track: CMakeFiles/SIFT-Human-Track.dir/link.txt
 CMakeFiles/SIFT-Human-Track.dir/build: SIFT-Human-Track
 .PHONY : CMakeFiles/SIFT-Human-Track.dir/build
 
-CMakeFiles/SIFT-Human-Track.dir/requires:
+CMakeFiles/SIFT-Human-Track.dir/requires: CMakeFiles/SIFT-Human-Track.dir/main.cpp.o.requires
 .PHONY : CMakeFiles/SIFT-Human-Track.dir/requires
 
 CMakeFiles/SIFT-Human-Track.dir/clean:

@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(CMAKE_COMMAND) -E cmake_progress_start /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles /Users/yuechuan/Develop/SIFT-Human-Track/bin/CMakeFiles/progress.marks
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(MAKE) -f CMakeFiles/Makefile2 bin/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(MAKE) -f CMakeFiles/Makefile2 bin/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,31 +88,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named SIFT-Human-Track
+# Convenience name for target.
+bin/CMakeFiles/SIFT-Human-Track.dir/rule:
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/SIFT-Human-Track.dir/rule
+.PHONY : bin/CMakeFiles/SIFT-Human-Track.dir/rule
 
-# Build rule for target.
-SIFT-Human-Track: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SIFT-Human-Track
+# Convenience name for target.
+SIFT-Human-Track: bin/CMakeFiles/SIFT-Human-Track.dir/rule
 .PHONY : SIFT-Human-Track
 
 # fast build rule for target.
 SIFT-Human-Track/fast:
-	$(MAKE) -f bin/CMakeFiles/SIFT-Human-Track.dir/build.make bin/CMakeFiles/SIFT-Human-Track.dir/build
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(MAKE) -f bin/CMakeFiles/SIFT-Human-Track.dir/build.make bin/CMakeFiles/SIFT-Human-Track.dir/build
 .PHONY : SIFT-Human-Track/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(MAKE) -f bin/CMakeFiles/SIFT-Human-Track.dir/build.make bin/CMakeFiles/SIFT-Human-Track.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(MAKE) -f bin/CMakeFiles/SIFT-Human-Track.dir/build.make bin/CMakeFiles/SIFT-Human-Track.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(MAKE) -f bin/CMakeFiles/SIFT-Human-Track.dir/build.make bin/CMakeFiles/SIFT-Human-Track.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -123,6 +148,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SIFT-Human-Track"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -134,6 +162,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/yuechuan/Develop/SIFT-Human-Track && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

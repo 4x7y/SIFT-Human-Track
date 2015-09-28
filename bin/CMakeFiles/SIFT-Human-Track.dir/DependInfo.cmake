@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/yuechuan/Develop/SIFT-Human-Track/main.cpp" "/Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles/SIFT-Human-Track.dir/main.cpp.o"
+  "/Users/yuechuan/Develop/SIFT-Human-Track/src/main.cpp" "/Users/yuechuan/Develop/SIFT-Human-Track/bin/CMakeFiles/SIFT-Human-Track.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

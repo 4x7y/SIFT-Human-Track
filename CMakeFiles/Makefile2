@@ -53,38 +53,53 @@ CMAKE_SOURCE_DIR = /Users/yuechuan/Develop/SIFT-Human-Track
 CMAKE_BINARY_DIR = /Users/yuechuan/Develop/SIFT-Human-Track
 
 #=============================================================================
-# Target rules for target CMakeFiles/SIFT-Human-Track.dir
+# Directory level rules for directory bin
+
+# Convenience name for "all" pass in the directory.
+bin/all: bin/CMakeFiles/SIFT-Human-Track.dir/all
+.PHONY : bin/all
+
+# Convenience name for "clean" pass in the directory.
+bin/clean: bin/CMakeFiles/SIFT-Human-Track.dir/clean
+.PHONY : bin/clean
+
+# Convenience name for "preinstall" pass in the directory.
+bin/preinstall:
+.PHONY : bin/preinstall
+
+#=============================================================================
+# Target rules for target bin/CMakeFiles/SIFT-Human-Track.dir
 
 # All Build rule for target.
-CMakeFiles/SIFT-Human-Track.dir/all:
-	$(MAKE) -f CMakeFiles/SIFT-Human-Track.dir/build.make CMakeFiles/SIFT-Human-Track.dir/depend
-	$(MAKE) -f CMakeFiles/SIFT-Human-Track.dir/build.make CMakeFiles/SIFT-Human-Track.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles 
+bin/CMakeFiles/SIFT-Human-Track.dir/all:
+	$(MAKE) -f bin/CMakeFiles/SIFT-Human-Track.dir/build.make bin/CMakeFiles/SIFT-Human-Track.dir/depend
+	$(MAKE) -f bin/CMakeFiles/SIFT-Human-Track.dir/build.make bin/CMakeFiles/SIFT-Human-Track.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles  1
 	@echo "Built target SIFT-Human-Track"
-.PHONY : CMakeFiles/SIFT-Human-Track.dir/all
+.PHONY : bin/CMakeFiles/SIFT-Human-Track.dir/all
 
 # Include target in all.
-all: CMakeFiles/SIFT-Human-Track.dir/all
+all: bin/CMakeFiles/SIFT-Human-Track.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SIFT-Human-Track.dir/rule: cmake_check_build_system
+bin/CMakeFiles/SIFT-Human-Track.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/SIFT-Human-Track.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SIFT-Human-Track.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuechuan/Develop/SIFT-Human-Track/CMakeFiles 0
-.PHONY : CMakeFiles/SIFT-Human-Track.dir/rule
+.PHONY : bin/CMakeFiles/SIFT-Human-Track.dir/rule
 
 # Convenience name for target.
-SIFT-Human-Track: CMakeFiles/SIFT-Human-Track.dir/rule
+SIFT-Human-Track: bin/CMakeFiles/SIFT-Human-Track.dir/rule
 .PHONY : SIFT-Human-Track
 
 # clean rule for target.
-CMakeFiles/SIFT-Human-Track.dir/clean:
-	$(MAKE) -f CMakeFiles/SIFT-Human-Track.dir/build.make CMakeFiles/SIFT-Human-Track.dir/clean
-.PHONY : CMakeFiles/SIFT-Human-Track.dir/clean
+bin/CMakeFiles/SIFT-Human-Track.dir/clean:
+	$(MAKE) -f bin/CMakeFiles/SIFT-Human-Track.dir/build.make bin/CMakeFiles/SIFT-Human-Track.dir/clean
+.PHONY : bin/CMakeFiles/SIFT-Human-Track.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/SIFT-Human-Track.dir/clean
+clean: bin/CMakeFiles/SIFT-Human-Track.dir/clean
 .PHONY : clean
 
 #=============================================================================
