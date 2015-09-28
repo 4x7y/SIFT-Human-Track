@@ -1,1 +1,0 @@
-/Users/yuechuan/Develop/SIFT-Human-Track/bin/CMakeFiles/SIFT-Human-Track.dir
