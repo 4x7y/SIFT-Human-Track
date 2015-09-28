@@ -8,7 +8,6 @@ find_package( OpenCV REQUIRED )
 include_directories( ${root_SOURCE_DIR}/include )
 
 
-
 add_subdirectory( src bin )
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
